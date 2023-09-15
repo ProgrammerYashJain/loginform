@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(pexels-pixabay-33545.jpg);
+    /* background-image: url(pexels-pixabay-33545.jpg); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.from-items {
+    background-color: rgba(51, 51, 51, 0.6);
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 30px;
+    flex-direction: column;
+}
+
+.from-items img {
+    width: 12vw;
+    margin: 20px 20px;
+}
+
+.from-items h1 {
+    font-size: 6vh;
+    color: white;
+    font-weight: 300;
+    margin-top: 2vh;
+}
+
+.from-items h2 {
+    margin: 2.3vh 0;
+    color: rgb(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+
+.from-items input {
+    width: 30vw;
+    height: 5vh;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid #000000;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.50rem;
+    transition: 0.4s;
+}
+
+.from-items input:focus {
+    border-bottom: 2px solid rgba(130, 69, 73, 0.63);
+}
+
+.from-items button {
+    height: 7vh;
+    width: 45%;
+    text-transform: uppercase;
+    background-color: rgba(130, 69, 73);
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: 200;
+    font-size: 2vh;
+    transition: 0.4s all;
+}
+
+.from-items button:hover,
+:focus {
+    background-color: transparent;
+    border: 2px solid rgba(130, 69, 73);
+}
+
+@media (max-width:764px) {
+    .from-items h1{
+        font-size: 4vh;
+    }
+
+    .from-items h2 {
+        font-size: 2vh;
+    }
+
+    .from-items img {
+        width: 25vw;
+    }
+
+    .from-items input{
+        width: 70vw;
+    }
+}
+
+
+@media (min-width:766px) and (max-width: 1100px){
+    .from-items h1{
+        font-size: 4vh;
+    }
+    .from-items h2 {
+        font-size: 2vh;
+    }
+}
